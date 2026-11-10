@@ -1,0 +1,12 @@
+torch
+torchaudio
+torchvision
+mediapipe
+opencv-python
+librosa
+numpy
+scipy
+pyyaml
+tqdm
+pystoi
+pesq

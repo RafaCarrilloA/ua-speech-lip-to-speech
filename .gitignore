@@ -1,0 +1,33 @@
+# Entorno virtual y Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Datos y Archivos Pesados (Ignorados en Git)
+data/
+*.tgz
+*.tar.gz
+*.zip
+*.wav
+*.mp4
+*.npy
+*.pt
+*.pth
+
+# Checkpoints y Logs de Entrenamiento
+checkpoints/
+logs/
+wandb/
+.tensorboard/
+
+# Archivos del sistema y editor
+.DS_Store
+.vscode/
+.idea/
