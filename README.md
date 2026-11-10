@@ -72,41 +72,7 @@ The UA-Speech (University of Illinois) corpus is an isolated-word dysarthric spe
 - **Acoustic Formats**: Original raw audio, peak-normalized audio, and spectral noise-reduced audio.
 - **Visual Formats**: High-definition video streams centered on facial movement.
 
-### Step-by-Step Dataset Installation:
-
-1. **Directory Allocation**: Place the downloaded archive files (`.tgz`) into `data/raw/`. Do not commit raw binary data to Git.
-
-```text
-data/
-├── raw/
-│   ├── UASpeech_video_0.tgz
-│   ├── UASpeech_video_1.tgz
-│   ├── UASpeech_noisereduce_FM.tgz
-│   └── UASpeech_normalized_FM.tgz
-└── processed/
-    ├── landmarks/       # Extracted .npy coordinate arrays
-    └── mels/            # Computed 80-band Mel-spectrograms
-```
-
-2. **Extraction Command**:
-```bash
-# Extract video assets into raw data directory
-tar -xvf data/raw/UASpeech_video_0.tgz -C data/raw/
-tar -xvf data/raw/UASpeech_video_1.tgz -C data/raw/
-
-# Extract noise-reduced reference audio
-tar -xvf data/raw/UASpeech_noisereduce_FM.tgz -C data/raw/
-```
-
-3. **Preprocessing Pipeline Execution**:
-Run the automated landmark localization, lip alignment, and Mel-spectrogram generation:
-```bash
-python src/preprocessing.py --config configs/baseline.yaml
-```
-
----
-
-## 🧪 Evaluation Metrics Matrix
+## Evaluation Metrics Matrix
 
 The system performance is quantitatively benchmarked using three evaluation tiers:
 
@@ -119,7 +85,7 @@ The system performance is quantitatively benchmarked using three evaluation tier
 
 ---
 
-## 💻 Repository Structure
+##  Repository Structure
 
 ```text
 ua-speech-lip-to-speech/
